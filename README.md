@@ -1,4 +1,4 @@
-# reservationApp
+# ReservationApp
 
 Simple apartment rental application
 
@@ -16,7 +16,7 @@ curl -X POST http://localhost:8080/reservation -H "Content-Type: application/jso
 
 To update rent time use:
 ```
-curl -X PUT http://localhost:8080/reservation/1 -H "Content-Type: application/json" -d "{\"startDate\":\"2022-09-28\", \"endDate\":\"2022-10-05\"}"
+curl -X PUT http://localhost:8080/reservation/{reservationId} -H "Content-Type: application/json" -d "{\"startDate\":\"2022-09-28\", \"endDate\":\"2022-10-05\"}"
 ```
 
 To get reservation made by specific tenant:
